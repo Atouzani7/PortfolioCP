@@ -1,0 +1,31 @@
+@use "../src/App.scss";
+
+.headerLook {
+  background-color: antiquewhite;
+  //   background-color: rgb(16, 16, 16);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .logo {
+    width: 15vw;
+    margin: 2vw;
+  }
+  .nav-links {
+    border-radius: 15px;
+    background-color: "#6D071A";
+    text-decoration-line: none;
+    color: white;
+  }
+  ul {
+    display: flex;
+    justify-content: end;
+
+    li {
+      margin: 1vw;
+      list-style: none;
+      font-family: App.$font-title;
+      font-size: App.$size-title;
+      color: App.$color-bordeau;
+    }
+  }
+}
