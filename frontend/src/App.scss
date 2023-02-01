@@ -1,11 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Solitreo&display=swap"); // cursive
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Solitreo&display=swap"); // "Caveat", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:ital,wght@1,200&family=Solitreo&display=swap"); // "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Poppins:ital,wght@1,200&family=Solitreo&display=swap"); //
 
 $color-bordeau: #6d071a;
+$background-gradient: linear-gradient(
+  to bottom,
+  #1a1a1a,
+  #271d2b,
+  #3f1a32,
+  #59102c,
+  #6d071a
+);
+
 $background-color: rgb(26, 26, 26);
 // $shadow-title: rgba(255, 255, 255, 0.5) 0px 3px 3px;
-$shadow-title: 3px 3px 20px #f1eef0, -2px 1px 30px #e7e7e7;
+$shadow-title: 5px 4px 1px #6d071a;
 $size-title: 1.5rem;
 
-$size-h1: 3rem;
+$font-paragraphe: "Indie Flower", cursive;
+$size-h1: 8rem;
 $font-title: "Solitreo", cursive;
+$font-h1: "Caveat", cursive;
 // $border-radius: ;

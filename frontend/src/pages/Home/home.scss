@@ -1,3 +1,102 @@
-p {
-  background-color: purple;
+@use "../src/App.scss";
+.Homepage {
+  height: 100vh;
+  background-image: App.$background-gradient;
+}
+.AboutMe {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10vh;
+
+  padding-left: 5vw;
+
+  h1 {
+    font-family: App.$font-h1;
+    color: App.$color-bordeau;
+    font-size: App.$size-h1;
+    color: white;
+    padding-right: 1.4vw;
+    box-shadow: App.$shadow-title;
+  }
+  .dev {
+    display: flex;
+    justify-content: end;
+    font-family: App.$font-title;
+    color: App.$color-bordeau;
+    font-size: App.$size-title;
+    color: white;
+    padding-right: 1.4vw;
+  }
+  .resume {
+    color: App.$color-bordeau;
+    border-radius: solid 1px white;
+    height: 20vh;
+    margin-top: 4vh;
+    border-radius: 10px;
+    width: 50vw;
+    color: white;
+    font-family: App.$font-title;
+    font-size: 1.5rem;
+  }
+  .photo {
+    margin: 2vw;
+    margin-top: 7vh;
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-image: url("@assets/avatar.svg");
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      margin: 2vh;
+      font-family: App.$font-title;
+      background-image: linear-gradient(
+        to right,
+        #6d071a,
+        #6d071a 50%,
+        white 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :before {
+      content: "";
+      background: App.$color-bordeau;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :hover {
+      background-position: 0;
+    }
+
+    :hover::before {
+      width: 100%;
+    }
+  }
+  li {
+    color: white;
+    margin: 2vh;
+    font-family: App.$font-title;
+    list-style: square;
+    margin-top: 2vh;
+  }
 }
