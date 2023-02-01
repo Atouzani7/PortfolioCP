@@ -1,14 +1,13 @@
 @use "../src/App.scss";
 
 .headerLook {
-  background-color: antiquewhite;
-  //   background-color: rgb(16, 16, 16);
+  background-color: App.$background-color;
   display: flex;
   justify-content: space-around;
   align-items: center;
   .logo {
-    width: 15vw;
-    margin: 2vw;
+    width: 10vw;
+    margin: 1vw;
   }
   .nav-links {
     border-radius: 15px;
@@ -17,15 +16,48 @@
     color: white;
   }
   ul {
-    display: flex;
-    justify-content: end;
-
     li {
       margin: 1vw;
+      padding: 1vh;
       list-style: none;
       font-family: App.$font-title;
       font-size: App.$size-title;
       color: App.$color-bordeau;
+
+      background-image: linear-gradient(
+        to right,
+        #6d071a,
+        #6d071a 50%,
+        white 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :before {
+      content: "";
+      background: App.$color-bordeau;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :hover {
+      background-position: 0;
+    }
+
+    :hover::before {
+      width: 100%;
     }
   }
 }
