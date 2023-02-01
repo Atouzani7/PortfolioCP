@@ -5,6 +5,7 @@ import logo from "@assets/logo.svg";
 export default function Header() {
   const activeStyle = {
     textDecorationLine: "none",
+    backgroundColor: "#6d071a",
   };
 
   return (
@@ -16,28 +17,38 @@ export default function Header() {
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          <li className="nav-option">Accueil</li>
+          <span>
+            {" "}
+            <li className="nav-option">Accueil</li>
+          </span>
         </NavLink>
         <NavLink
           to="/skills"
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          <li>Compétences</li>
+          <span>
+            <li>Compétences</li>
+          </span>
         </NavLink>
         <NavLink
           to="/book"
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          <li>Portfolio</li>
+          {" "}
+          <span>
+            <li>Portfolio</li>
+          </span>
         </NavLink>
         <NavLink
           to="/contact"
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          <li>Contactez-moi</li>
+          <span>
+            <li>Contactez-moi</li>
+          </span>
         </NavLink>
       </ul>
     </div>
