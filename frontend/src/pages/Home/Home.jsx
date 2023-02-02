@@ -1,11 +1,14 @@
 import "./home.scss";
+import Photo from "@assets/avatar.svg";
+// import Html from "@assets/HTML.svg";
 
 export default function Home() {
   return (
     <div className="Homepage">
       <div className="AboutMe">
         <section className="presentation">
-          <h1>Asma Touzani</h1> <h2 className="dev">Développeuse Web</h2>
+          <h1 className="title">Asma Touzani</h1>
+          <h2 className="dev">Développeuse Web</h2>
           <p className="resume">
             De nature créative j'ai toujours eu ce besoin de laisser libre court
             à mon imagination et mes pensées. <br />
@@ -27,36 +30,40 @@ export default function Home() {
             clavier, malgré tout de même mes incessantes réflexions me menant
             aux rêves.
           </p>
-        </section>
-        <section className="photo">
-          <a
-            href="https://www.linkedin.com/in/asma-touzani-077268251/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Linkedin
-          </a>
-          <a
-            href="https://github.com/Atouzani7"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Github
-          </a>
-        </section>
-        {/* <section className="Softkills">
-          <ul>
+          {/* <ul>
             <li>Organisée</li>
             <li>Réfléchie</li>
             <li>Rigoureuse</li>
             <li>Facilité d'adaptation</li>
-          </ul>
-        </section> */}
+          </ul> */}
+        </section>
+        <section className="photo">
+          <section className="Softkills">
+            <img src={Photo} alt="avatar" className="avatar" />
+            <a
+              href="https://www.linkedin.com/in/asma-touzani-077268251/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Linkedin
+            </a>
+            <a
+              href="https://github.com/Atouzani7"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
+            </a>
+          </section>
+        </section>
       </div>
-      <section className="HardSkills">
-        <ul>
+      <section>
+        <ul className="HardSkills">
           <li>
-            <span className="Skill1">HTML </span>
+            <span className="Skill1">
+              HTML
+              {/* <img src={Html} alt="html" className="skill1" /> */}
+            </span>
           </li>
           <li>
             <span className="Skill2">CSS </span>
