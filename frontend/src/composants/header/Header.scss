@@ -63,3 +63,14 @@
     }
   }
 }
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    width: 60vw;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+  }
+}

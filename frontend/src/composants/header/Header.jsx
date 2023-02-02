@@ -11,14 +11,13 @@ export default function Header() {
   return (
     <div className="headerLook">
       <img className="logo" src={logo} alt="logo" />
-      <ul>
+      <ul className="navbar">
         <NavLink
           to="/"
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           <span>
-            {" "}
             <li className="nav-option">Accueil</li>
           </span>
         </NavLink>
@@ -36,7 +35,6 @@ export default function Header() {
           className="nav-links"
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
-          {" "}
           <span>
             <li>Portfolio</li>
           </span>
@@ -47,7 +45,7 @@ export default function Header() {
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           <span>
-            <li>Contactez-moi</li>
+            <li>Contact</li>
           </span>
         </NavLink>
       </ul>

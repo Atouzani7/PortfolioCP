@@ -1,11 +1,28 @@
 import "./home.scss";
 import Photo from "@assets/avatar.svg";
-// import Html from "@assets/HTML.svg";
 
 export default function Home() {
   return (
     <div className="Homepage">
       <div className="AboutMe">
+        {" "}
+        <section className="photo">
+          <img src={Photo} alt="avatar" className="avatar" />
+          <a
+            href="https://www.linkedin.com/in/asma-touzani-077268251/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Linkedin
+          </a>
+          <a
+            href="https://github.com/Atouzani7"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </section>
         <section className="presentation">
           <h1 className="title">Asma Touzani</h1>
           <h2 className="dev">Développeuse Web</h2>
@@ -30,70 +47,8 @@ export default function Home() {
             clavier, malgré tout de même mes incessantes réflexions me menant
             aux rêves.
           </p>
-          {/* <ul>
-            <li>Organisée</li>
-            <li>Réfléchie</li>
-            <li>Rigoureuse</li>
-            <li>Facilité d'adaptation</li>
-          </ul> */}
-        </section>
-        <section className="photo">
-          <section className="Softkills">
-            <img src={Photo} alt="avatar" className="avatar" />
-            <a
-              href="https://www.linkedin.com/in/asma-touzani-077268251/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Linkedin
-            </a>
-            <a
-              href="https://github.com/Atouzani7"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Github
-            </a>
-          </section>
         </section>
       </div>
-      <section>
-        <ul className="HardSkills">
-          <li>
-            <span className="Skill1">
-              HTML
-              {/* <img src={Html} alt="html" className="skill1" /> */}
-            </span>
-          </li>
-          <li>
-            <span className="Skill2">CSS </span>
-          </li>
-          <li>
-            <span className="Skill3">Figma</span>
-          </li>
-          <li>
-            <span className="Skill4">JavaScript</span>
-          </li>
-          <li>
-            <span className="Skill5">Git</span>
-          </li>
-          <li>
-            <span className="Skill6">React.js</span>
-          </li>
-          <li>
-            <span className="Skill7">UI / UX</span>
-          </li>
-          <li>
-            <span className="Skill8">MySQL</span>
-          </li>
-          <li>
-            <span className="Skill9">Node.js</span>
-          </li>
-          <li>
-            <span className="Skill10">Express.js</span>
-          </li>
-        </ul>
-      </section>
     </div>
   );
 }

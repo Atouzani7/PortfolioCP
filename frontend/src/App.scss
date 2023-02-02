@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:ital,wght@1,200&family=Solitreo&display=swap"); // "Poppins", sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Indie+Flower&family=Poppins:ital,wght@1,200&family=Solitreo&display=swap"); //
 
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap"); // font-family: 'Itim', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"); // 'Kalam', cursive;
+
 $color-bordeau: #6d071a;
 $background-gradient: linear-gradient(
   to bottom,
@@ -13,12 +16,11 @@ $background-gradient: linear-gradient(
   #6d071a
 );
 
-$background-color: rgb(26, 26, 26);
-// $shadow-title: rgba(255, 255, 255, 0.5) 0px 3px 3px;
+$background-color: #1a1a1a;
 $shadow-title: 5px 4px 1px #6d071a;
 $size-title: 1.5rem;
 
 $size-h1: 8rem;
 $font-title: "Solitreo", cursive;
-$font-h1: "Caveat", cursive;
+$font-h1: "Kalam", cursive; //"Caveat", cursive;
 // $border-radius: ;
