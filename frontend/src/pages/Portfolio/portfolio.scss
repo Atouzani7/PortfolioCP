@@ -2,7 +2,7 @@
 
 .Portfoliopage {
   background-image: App.$background-gradient;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -11,7 +11,7 @@
   .cards {
     background-color: #1a1a1a;
     color: white;
-    width: 15vw;
+    width: 18vw;
     height: 30vh;
     border: solid white 2px;
     border-radius: 15px;
@@ -77,6 +77,25 @@
 
     :hover::before {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .Portfoliopage {
+    height: 250vh;
+    // align-content: center;
+    // flex-direction: column;
+    .nameSite {
+      color: white;
+      font-size: 1rem;
+      //   display: flex;
+      margin: 2vh;
+    }
+
+    .cards {
+      height: 30vh;
+      width: 70vw;
     }
   }
 }
