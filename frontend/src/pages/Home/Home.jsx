@@ -1,6 +1,6 @@
 import "./home.scss";
 import Photo from "@assets/avatar.svg";
-import Html from "@assets/HTML.svg";
+// import Html from "@assets/HTML.svg";
 
 export default function Home() {
   return (
