@@ -1,0 +1,82 @@
+@use "../src/App.scss";
+
+.Portfoliopage {
+  background-image: App.$background-gradient;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 14vw;
+  padding-right: 14vw;
+  .cards {
+    background-color: #1a1a1a;
+    color: white;
+    width: 15vw;
+    height: 30vh;
+    border: solid white 2px;
+    border-radius: 15px;
+    padding: 3vh;
+    justify-items: center;
+    margin-bottom: 2vh;
+    margin: 2vh;
+    font-family: App.$font-title;
+
+    .nameSite {
+      color: white;
+      font-size: 1.5rem;
+      display: flex;
+      margin: 2vh;
+    }
+    .imgSite {
+      width: 14vw;
+      height: 15vh;
+      background-image: contain;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+    .lienSite {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      margin: 2vh;
+      font-family: App.$font-title;
+      background-image: linear-gradient(
+        to right,
+        #6d071a,
+        #6d071a 50%,
+        white 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :before {
+      content: "";
+      background: App.$color-bordeau;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    :hover {
+      background-position: 0;
+    }
+
+    :hover::before {
+      width: 100%;
+    }
+  }
+}
