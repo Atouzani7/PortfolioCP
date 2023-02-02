@@ -1,0 +1,17 @@
+@use "../src/App.scss";
+
+.footerLook {
+  background-color: #6d071a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: App.$font-h1;
+  height: 15vh;
+  .logoFooter {
+    width: 4%;
+  }
+  .langue {
+    width: 15%;
+  }
+}
