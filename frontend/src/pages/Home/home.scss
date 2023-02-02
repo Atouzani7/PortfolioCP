@@ -30,10 +30,10 @@
   .resume {
     color: App.$color-bordeau;
     border-radius: solid 1px white;
-    height: 20vh;
+    // height: 20vh;
     margin-top: 4vh;
     border-radius: 10px;
-    width: 50vw;
+    width: 60vw;
     color: white;
     font-family: App.$font-title;
     font-size: 1.5rem;
@@ -42,13 +42,12 @@
     margin: 2vw;
     margin-top: 7vh;
     width: 30vw;
-    height: 50vh;
+    // height: 50vh;
     display: flex;
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 50%;
-    background-image: url("@assets/avatar.svg");
     a {
       display: flex;
       align-items: center;
@@ -94,9 +93,36 @@
   }
   li {
     color: white;
+    display: flex;
+    justify-content: space-around;
     margin: 2vh;
     font-family: App.$font-title;
     list-style: square;
     margin-top: 2vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .Homepage {
+    height: 100vh;
+  }
+
+  .AboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .resume {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+  }
+  .photo {
+    border: white solid 3px;
+  }
+  .Softkills li {
+    background-color: rgb(21, 140, 140);
+    display: flex;
+    flex-direction: row;
   }
 }
