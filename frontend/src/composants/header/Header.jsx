@@ -27,7 +27,7 @@ export default function Header() {
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           <span>
-            <li>Compétences</li>
+            <li>Stacks</li>
           </span>
         </NavLink>
         <NavLink

@@ -11,12 +11,12 @@ export default function Home() {
     });
   }, []);
   return (
-    <div className="Portfoliopage">
+    <div className="skillpage">
       {dataInfo.map((elt) => {
         return (
           <div className="cardsSkills">
             <img src={elt.image} alt={elt.name} className="imgSite" />
-            <h1 className="nameSite">{elt.spe}</h1>
+            <h1 className="nameSite">Outils coté utilisé {elt.spe}</h1>
           </div>
         );
       })}

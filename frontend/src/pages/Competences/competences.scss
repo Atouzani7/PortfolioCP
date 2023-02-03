@@ -1,15 +1,43 @@
 @use "../src/App.scss";
-
+.skillpage {
+  background-image: App.$background-gradient;
+  height: 130vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 14vw;
+  padding-right: 14vw;
+}
 .cardsSkills {
-  flex: 1 2 10px;
+  flex: flex;
   justify-content: space-around;
-  height: 13vh;
+  justify-items: center;
+  height: 25vh;
+  width: 30vw;
+  // border-left: solid white 2px;
+  padding: 1vw;
+
   .imgSite {
     width: 6vw;
     height: 10vh;
   }
   .nameSite {
+    // border: solid white 2px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     color: white;
     font-family: App.$font-title;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .skillpage {
+  }
+  .cardsSkills {
+    width: 20vw;
+    flex: flex;
+    justify-content: space-around;
+    justify-items: center;
   }
 }
