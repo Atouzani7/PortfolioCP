@@ -30,11 +30,20 @@
     border: solid 2px App.$color-bordeau;
   }
   .message {
-    height: 20vh;
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      height: 20vh;
+      border-radius: 20px;
+      margin: 1vh;
+      padding: 8px;
+    }
   }
   .submit {
-    padding: 2vh;
-    width: 15vw;
+    // padding: 2vh;
+    // width: 10vw;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -43,9 +52,21 @@
     border-radius: 20vh;
 
     .send {
-      width: 20%;
+      width: 3vw;
       transform: rotate(45deg);
       margin-left: 2vh;
     }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .formContact {
+    font-size: 1rem;
+  }
+  .submit {
+    width: 40vw;
+  }
+  .send {
+    width: 10vw;
   }
 }
