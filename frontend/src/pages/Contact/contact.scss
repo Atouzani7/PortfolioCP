@@ -30,7 +30,16 @@
     border: solid 2px App.$color-bordeau;
   }
   .message {
-    height: 20vh;
+    width: 43vw;
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      height: 20vh;
+      border-radius: 20px;
+      margin: 1vh;
+      padding: 8px;
+    }
   }
   .submit {
     padding: 2vh;
